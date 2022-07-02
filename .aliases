@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # general
 alias sbp='source ~/.bash_profile'
 alias l='ls -lah'
