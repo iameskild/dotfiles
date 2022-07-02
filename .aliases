@@ -1,0 +1,19 @@
+# general
+alias sbp='source ~/.bash_profile'
+alias l='ls -lah'
+alias ld='ls -d */'
+alias notes="code ~/OneDrive/Notes/"
+
+# git
+alias gaa='git add -A'
+alias gc='git commit -m'
+alias gl='git pull'
+alias gp='git push'
+alias gs='git status'
+alias gb='git branch'
+
+# dotfile repo
+alias df='/usr/bin/git --git-dir=$HOME/dotfiles/.git/ --work-tree=$HOME'
+
+# terraform
+alias tf='terraform'
