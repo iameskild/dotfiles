@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# general
+alias sbp='source ~/.bash_profile'
+alias l='ls -lah'
+alias ld='ls -d */'
+alias notes="code ~/OneDrive/Notes/"
+
+# git
+alias gaa='git add -A'
+alias gc='git commit -m'
+alias gl='git pull'
+alias gp='git push'
+alias gs='git status'
+alias gb='git branch'
+alias gpsup='git push --set-upstream origin $(parse_current_git_branch)'
+alias glog='git log --oneline --graph'
+
+# dotfile repo
+alias df='/usr/bin/git --git-dir=$HOME/dotfiles/.git/ --work-tree=$HOME'
+
+# terraform
+alias tf='terraform'
+
+# docker
+alias drm='docker rm -vf $(docker ps -aq)'
+alias drmi='docker rmi -f $(docker images -aq)'
+
+# kubernetes
+alias k='kubectl'
+
+# export env vars
+alias sev='source ~/Documents/export4me.sh'
+
+# package managers
+alias ma='mamba activate'
+alias mi='mamba install'
+alias pi='pip install'
