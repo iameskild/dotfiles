@@ -23,6 +23,7 @@ alias df='/usr/bin/git --git-dir=$HOME/dotfiles/.git/ --work-tree=$HOME'
 alias tf='terraform'
 
 # docker
+alias d='docker'
 alias drm='docker rm -vf $(docker ps -aq)'
 alias drmi='docker rmi -f $(docker images -aq)'
 
