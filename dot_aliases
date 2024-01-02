@@ -37,3 +37,6 @@ alias sev='source ~/Documents/export4me.sh'
 alias ma='mamba activate'
 alias mi='mamba install'
 alias pi='pip install'
+
+# chezmoi
+alias cm='chezmoi'
