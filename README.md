@@ -16,4 +16,8 @@ Basic script to install packages and applications that aren't managed by Homebre
 
 For all applications that I only need one version of and which the version doesn't matter, I use Homebrew.
 
+To download applications found in the `Brewfile`
+```
+brew bundle
+```
 

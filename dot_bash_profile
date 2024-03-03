@@ -1,130 +1,46 @@
 #!/usr/bin/env bash
 
-# NAME=$(whoami | cut -d'@' -f1)
 
-# SYSTEM SPECIFIC
-# `arm64` == M1
-# `x86_64` == Intel
-SYS_HARDWARE=$(uname -m)
+# ignore "zsh is default" warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
-if [ "${SYS_HARDWARE}" == "arm64" ]; then
-    MINICONDA_PATH="/Users/eskild/miniconda3"
-elif [ "${SYS_HARDWARE}" == "x86_64" ]; then
-    MINICONDA_PATH="/Users/eskild/miniconda3-intel"
-fi
-
-export MINICONDA_PATH
-
-parse_git_branch() {
-  git branch --color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/'
-}
-
-parse_current_git_branch() {
-    git -C "$1" branch | sed  '/^\*/!d;s/\* //'
-}
-
-parse_conda_env() {
-    echo "$CONDA_DEFAULT_ENV"
-}
-
-# YELLOW=$(tput setaf 136)
-# ORANGE=$(tput setaf 166)
-# RED=$(tput setaf 160)
-# MAGENTA=$(tput setaf 125)
-# VIOLET=$(tput setaf 61)
-# BLUE=$(tput setaf 33)
-# CYAN=$(tput setaf 37)
-# GREEN=$(tput setaf 64)
-BOLD=$(tput bold)
-RESET=$(tput sgr0)
-
-# PS1="\[$CYAN\]$NAME:\w\[$RESET\]\$(parse_git_branch) \n\[$GREEN\]\A \$ \[$RESET\]"
-PS1="\u@\h \w\$(parse_git_branch) \[$BOLD\]\$(parse_conda_env)\[$RESET\]\n\$ "
-
+export PATH="/Users/$USER/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 complete -C /opt/homebrew/bin/terraform terraform
 
-
-# bash
-## ignore "zsh is default" warning
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
-## ls colors: https://geoff.greer.fm/lscolors/
-export LSCOLORS="ExfxfhdhgxhhhhhhhhEhEh"
-alias ls='ls -lGH'
-
-## source aliases
-if [ -e $HOME/.aliases ]; then
-    source $HOME/.aliases
+# source aliases
+if [ -e "$HOME"/.aliases ]; then
+    # shellcheck disable=SC1091
+    source "$HOME"/.aliases
 fi
 
-## bash_completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+# shellcheck disable=SC1091
+source "$HOME"/.bashrc
 
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
-
-# direnv
-eval "$(direnv hook bash)"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/eskild/google-cloud-sdk/path.bash.inc' ]; then . '/Users/eskild/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/eskild/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/eskild/google-cloud-sdk/completion.bash.inc'; fi
-
-export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-
-
-# Modified to handle both different system architectures
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/eskild/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$("/Users/$USER/miniforge3/bin/conda" 'shell.bash' 'hook' 2> /dev/null)"
+# shellcheck disable=SC2181
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/eskild/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/eskild/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/$USER/miniforge3/etc/profile.d/conda.sh" ]; then
+        # shellcheck disable=SC1091
+        # shellcheck source=/dev/null
+        . "/Users/$USER/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/eskild/miniconda3/bin:$PATH"
+        export PATH="/Users/$USER/miniforge3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 
-if [ -f "/Users/eskild/miniconda3/etc/profile.d/mamba.sh" ]; then
-    . "/Users/eskild/miniconda3/etc/profile.d/mamba.sh"
+if [ -f "/Users/$USER/miniforge3/etc/profile.d/mamba.sh" ]; then
+    # shellcheck disable=SC1091
+    # shellcheck source=/dev/null
+    . "/Users/$USER/miniforge3/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
 
-# kubernetes
-source <(kubectl completion bash)
-complete -F __start_kubectl k
-
-
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE="/opt/homebrew/bin/micromamba";
-export MAMBA_ROOT_PREFIX="/Users/eskild/micromamba";
-__mamba_setup="$('/opt/homebrew/bin/micromamba' shell hook --shell bash --prefix '/Users/eskild/micromamba' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    if [ -f "/Users/eskild/micromamba/etc/profile.d/micromamba.sh" ]; then
-        . "/Users/eskild/micromamba/etc/profile.d/micromamba.sh"
-    else
-        export  PATH="/Users/eskild/micromamba/bin:$PATH"  # extra space after export prevents interference from conda init
-    fi
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
-
-
-. "$HOME/.cargo/env"
-
-export PATH="/Users/eskild/.local/bin:$PATH"
-
-# shellcheck source=.bashrc
-source "$HOME/.bashrc"
