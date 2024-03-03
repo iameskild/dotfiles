@@ -1,0 +1,275 @@
+{
+  "main": {
+    "id": "992b9f5deb9f89c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "b122bb443285cc56",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69e8721a44de4f25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "All Notes/2023 Yearly Theme.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f3f8f1c3d1e6cc7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily Notes/2024-02-11.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "24a4e013e82cf9a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "All Notes/10 Worthy Questions.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "15399ba52fdc32f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "All Notes/AWS MOC.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2834dbaa44240bd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "All Notes/AWS Basics.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8d51cde1d75addf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "All Notes/In the arena.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "94e2b0f6efc1b037",
+    "type": "split",
+    "children": [
+      {
+        "id": "77ecc6bf2aa9e9a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78458430fa942c49",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4ce0ecd12ead34a2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6de237ab89bdd91f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 310.5
+  },
+  "right": {
+    "id": "b81e1f4316a7eaee",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1f6c6fdaee07e26",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d11a72456520ce99",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "All Notes/In the arena.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "aed75953fe388d73",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "All Notes/In the arena.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0e501244cfcbae6e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5fdba1d5563cd031",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "All Notes/In the arena.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "dfce2a128f5db101",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe4e5cc7fcaf486c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 333.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "78458430fa942c49",
+  "lastOpenFiles": [
+    "All Notes/Data Platform.md",
+    "Daily Notes/2024-03-02.md",
+    "Daily Notes/2024-03-01.md",
+    "All Notes/AWS Airflow.md",
+    "All Notes/AWS Basics.md",
+    "Daily Notes/2024-02-11.md",
+    "Daily Notes/2024-02-15.md",
+    "Daily Notes/2024-02-19.md",
+    "Daily Notes/2021-05-24.md",
+    "All Notes/Become the ocean.md",
+    "All Notes/2023 Yearly Theme.md",
+    "All Notes/In the arena.md",
+    "Daily Notes/2024-02-23.md",
+    "All Notes/2024 Yearly Budget.md",
+    "Daily Notes/2024-02-22.md",
+    "eskild.blog/Magical Powder.md",
+    "TBD.md",
+    "All Notes/AWS MOC.md",
+    "All Notes/Notes on AWS for datum.md",
+    "All Notes/10 Worthy Questions.md",
+    "eskild.blog/3 interesting ideas from 2023.md",
+    "eskild.blog",
+    "All Notes/20201112101606 Machine Learning Index.md",
+    "All Notes/Command Line MOC.md",
+    "All Notes/ROOT MOC.md",
+    "All Notes/Career MOC.md",
+    "All Notes/Wealth MOC.md",
+    "Untitled.canvas",
+    "_attachments/20230308-nebari-storage-brainstorm.png",
+    "_attachments/rhizome.png",
+    "_attachments/joshua-tree-species.png",
+    "_attachments/Plant Protein.jpg",
+    "_attachments/mortgage-option-flowchart.jpg",
+    "_attachments/wavelenght_vs_absorbance_chlorophyll.png",
+    "_attachments/data_vs_algorithms.png",
+    "_attachments/monocots-vs-dicots.jpg",
+    "_attachments/ca-diagram.png",
+    "_attachments",
+    "Daily Notes",
+    "_templates",
+    "All Notes",
+    "pdfs"
+  ]
+}
