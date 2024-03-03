@@ -1,4 +1,5 @@
 [
   "obsidian-linter",
-  "url-into-selection"
+  "url-into-selection",
+  "execute-code"
 ]

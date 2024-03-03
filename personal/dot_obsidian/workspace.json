@@ -4,89 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "b122bb443285cc56",
+        "id": "5eb19c9b8886b5ee",
         "type": "tabs",
         "children": [
           {
-            "id": "69e8721a44de4f25",
+            "id": "8f37db7a9e1803a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "All Notes/2023 Yearly Theme.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f3f8f1c3d1e6cc7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Notes/2024-02-11.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "24a4e013e82cf9a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "All Notes/10 Worthy Questions.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "15399ba52fdc32f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "All Notes/AWS MOC.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2834dbaa44240bd0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "All Notes/AWS Basics.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8d51cde1d75addf5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "All Notes/In the arena.md",
+                "file": "Daily Notes/2024-03-02.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "All Notes/In the arena.md",
+                "file": "Daily Notes/2024-03-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "All Notes/In the arena.md",
+                "file": "Daily Notes/2024-03-02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "All Notes/In the arena.md"
+                "file": "Daily Notes/2024-03-02.md"
               }
             }
           }
@@ -227,28 +161,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "78458430fa942c49",
+  "active": "8f37db7a9e1803a2",
   "lastOpenFiles": [
-    "All Notes/Data Platform.md",
+    "All Notes/2023 Yearly Theme.md",
+    "Daily Notes/2024-02-11.md",
+    "All Notes/10 Worthy Questions.md",
+    "All Notes/AWS MOC.md",
+    "All Notes/AWS Basics.md",
     "Daily Notes/2024-03-02.md",
+    "All Notes/Data Platform.md",
     "Daily Notes/2024-03-01.md",
     "All Notes/AWS Airflow.md",
-    "All Notes/AWS Basics.md",
-    "Daily Notes/2024-02-11.md",
     "Daily Notes/2024-02-15.md",
     "Daily Notes/2024-02-19.md",
     "Daily Notes/2021-05-24.md",
     "All Notes/Become the ocean.md",
-    "All Notes/2023 Yearly Theme.md",
     "All Notes/In the arena.md",
     "Daily Notes/2024-02-23.md",
     "All Notes/2024 Yearly Budget.md",
     "Daily Notes/2024-02-22.md",
     "eskild.blog/Magical Powder.md",
     "TBD.md",
-    "All Notes/AWS MOC.md",
     "All Notes/Notes on AWS for datum.md",
-    "All Notes/10 Worthy Questions.md",
     "eskild.blog/3 interesting ideas from 2023.md",
     "eskild.blog",
     "All Notes/20201112101606 Machine Learning Index.md",
